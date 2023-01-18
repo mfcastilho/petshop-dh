@@ -3,10 +3,20 @@ const ServicesModel = require("../models/Service");
 
 
 const ServicosController = {
-  showCadastro: (req, res)=>{
+  showServicos: (req, res)=>{
 
     const services = ServicesModel.findAll();
-    res.render("servicos.ejs", {services});
+    const servicosMapeado = []
+    services.map(service=>{
+      servicosMapeado.push({
+        id:service.id,
+        name:service.name,
+        price:`R$ ${service.price.toLocaleString("pt-BR",{currency: "BRL", minimumFractionDigits: 2})}`,
+        description:service.description,
+        image:service.image
+      })
+    })
+    res.render("servicos.ejs", {services:servicosMapeado});
   }
 }
 
