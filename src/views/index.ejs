@@ -22,7 +22,18 @@
             <div class="container">
                 <h2>serviços</h2>
                 <div class="items">
-                    <article>
+
+                    <% services.forEach(service =>{ %>
+                        <article>
+                            <div class="thumb">
+                                <img class="home-img-card-service" src="<%= service.image%>" alt="">
+                            </div>
+                            <h3><%= service.name%></h3>
+                            <h4><%= service.price%></h4>
+                        </article>
+                   <% }); %> 
+                    
+                    <!-- <article>
                         <div class="thumb"></div>
                         <h3>banho completo</h3>
                         <h4>R$40,00</h4>
@@ -31,12 +42,7 @@
                         <div class="thumb"></div>
                         <h3>banho completo</h3>
                         <h4>R$40,00</h4>
-                    </article>
-                    <article>
-                        <div class="thumb"></div>
-                        <h3>banho completo</h3>
-                        <h4>R$40,00</h4>
-                    </article>
+                    </article> -->
                 </div>
             </div>
         </section>

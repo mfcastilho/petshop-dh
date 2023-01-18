@@ -1,7 +1,7 @@
 const dataBase = require("../database/db.json");
 
 
-const Service = {
+const ServicesModel = {
   findAll:()=>{
 
     const services = dataBase.services;
@@ -12,4 +12,4 @@ const Service = {
 }
 
 
-module.exports = Service;
+module.exports = ServicesModel;

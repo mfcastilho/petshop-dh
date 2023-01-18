@@ -22,7 +22,7 @@
 		<div class="page">
 			<aside class="d-flex flex-column flex-shrink-0 p-3 min-vh-100 left" >
 				<a href="/admin/home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-					<span class="fs-4">Products House</span>
+					<span class="fs-4">PETSHOP DH</span>
 				</a>
 				<hr>
 
@@ -49,7 +49,7 @@
 							<svg class="bi pe-none me-2" width="16" height="16">
 								<use xlink:href="#home"></use>
 							</svg>
-							Produtos
+							Serviços
 						</a>
 					</li>
 
@@ -58,7 +58,7 @@
 							<svg class="bi pe-none me-2" width="16" height="16">
 								<use xlink:href="#home"></use>
 							</svg>
-							Cadastrar Produto
+							Cadastrar Serviço
 						</a>
 					</li>
 		
@@ -76,7 +76,7 @@
 							<svg class="bi pe-none me-2" width="16" height="16">
 								<use xlink:href="#table"></use>
 							</svg>
-							Pedidos
+							Agendamentos
 						</a>
 					</li>
 		
@@ -94,7 +94,7 @@
 	
 			<section class="content">
 				<div class="d-flex flex-column mt-3">
-					<h1 class="mb-3">Produtos</h1>
+					<h1 class="mb-3">Serviços</h1>
 					<a href="/admin/servicos/cadastro" class="btn btn-primary mb-3" >Cadastrar</a>
 				</div>
 	
@@ -105,7 +105,7 @@
 						<th scope="col">imagem</th>
 						<th scope="col">Nome</th>
 						<th scope="col">Preço</th>
-						<th scope="col">Agendado</th>
+						<!-- <th scope="col">Agendado</th> -->
 						<th scope="col">Descrição</th>
 						<th scope="col">Ações</th>
 						</tr>
@@ -113,28 +113,26 @@
 
 					<tbody>
 						
+            <% services.forEach((service)=>{ %>
+              <tr>
+                <th scope="row"><%= service.id %></th>
+                <td><img class="thumb" src="<%= service.image %>" alt="" width="100px" height="100px"></td>
+                <td><%= service.name %></td>
+                <td class="price-row"><%= service.price %></td>
+                <!-- <td>Sim</td> -->
+                <td><%= service.description %></td>
+                <td>
+                  <a href="/servicos/id" type="button" class="btn btn-primary">Abrir</a>
+                  <a href="/admin/servicos/id/editar" type="button" class="btn btn-secondary">Editar</a>
+  
+                  <form action="/admin/servicos/id/deletar?_method=DELETE" method="POST">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                  </form>								
+                </td>
+              </tr>
+  
+            <% }) %> 
 
-
-            <tr>
-              <th scope="row">1</th>
-              <td><img class="thumb" src="#" alt="" width="100px" height="100px"></td>
-              <td>Nome do Serviço</td>
-              <td>Preço do serviço</td>
-              <td>Sim</td>
-              <td>Descrição do Serviço</td>
-              <td>
-                <a href="/servicos/id" type="button" class="btn btn-primary">Abrir</a>
-                <a href="/admin/servicos/id/editar" type="button" class="btn btn-secondary">Editar</a>
-
-                <form action="/admin/servicos/id/deletar?_method=DELETE" method="POST">
-                  <button type="submit" class="btn btn-danger">Excluir</button>
-                </form>								
-              </td>
-            </tr>
-
-
-						
-					
 					</tbody>
 				</table>
 	

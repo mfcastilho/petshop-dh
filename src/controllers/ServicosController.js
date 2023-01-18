@@ -1,4 +1,4 @@
-const ServicesModel = require("../models/Service");
+const ServicesModel = require("../models/ServicesModel");
 
 
 

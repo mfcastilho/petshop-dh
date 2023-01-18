@@ -132,7 +132,10 @@ section.servicos-lista .thumb img {
 	width: inherit;
 	height: inherit;
 }
-
+.home-img-card-service{
+	width: 200px;
+	height: 200px;
+}
 section.sobre {
 	padding: 100px 0;
 }
