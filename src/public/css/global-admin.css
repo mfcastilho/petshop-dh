@@ -1,0 +1,61 @@
+.page {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white!important;;
+}
+
+aside.left {
+    width: 288px;
+    background-color: #ffbe51;
+    color: white;
+}
+
+.content {
+    margin: 0 auto;
+    width: 80%;
+}
+
+aside.left a.active {
+    background-color: white!important;
+    color: #ffbe51!important;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #ffbe51!important;
+    color: white;
+    border: none!important;
+}
+
+.btn-primary:hover {
+    background-color: #ffbe51!important;
+    border: none!important;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form_product {
+    border: 2px solid #ffbe51;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.form_product h1 {
+    color: #6C4AB6;
+    font-weight: bold;
+}
+
+.form_product label {
+    font-weight: bold;
+}
+
+.form_product input[type="checkbox"]:checked {
+    background-color: #ffbe51;
+}

@@ -12,6 +12,7 @@ const contatoRouter = require("./routers/contatoRouter");
 const indexRouter = require("./routers/indexRouter");
 const servicosRouter = require("./routers/servicosRouter");
 const sobreRouter = require("./routers/sobreRouter");
+const adminRouter = require("./routers/adminRouter");
 
 
 
@@ -31,6 +32,7 @@ app.use(contatoRouter);
 app.use(indexRouter);
 app.use(servicosRouter);
 app.use(sobreRouter);
+app.use(adminRouter);
 
 
 
