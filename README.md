@@ -64,7 +64,7 @@ Para atingir esse objetivo será necessário:
 | `contato`  | GET    | Deve renderizar a view `contato`  |
 | `servicos` | GET    | Deve renderizar a view `servicos` |
 
--   [ ] Criar o controller para tratar estas rotas
+-   [X] Criar o controller para tratar estas rotas
 
 #
 
