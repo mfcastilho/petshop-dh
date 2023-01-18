@@ -2,17 +2,17 @@ const express = require("express");
 const app = express();
 
 const port = 3000;
-const fs = require("fs");
 const path = require("path");
 
 
 
-const cadastroRouter = require("./routers/cadastroRouter");
+
+const authRouter = require("./routers/authRouter");
 const contatoRouter = require("./routers/contatoRouter");
 const indexRouter = require("./routers/indexRouter");
-const loginRouter = require("./routers/loginRouter");
 const servicosRouter = require("./routers/servicosRouter");
 const sobreRouter = require("./routers/sobreRouter");
+
 
 
 
@@ -25,14 +25,10 @@ app.use(express.json());
 app.use(express.static(path.resolve("src", "public")));
 
 
-// app.get("/", (req, res)=>{
-//   res.send("Express Works!");
-// })
 
-app.use(cadastroRouter);
+app.use(authRouter);
 app.use(contatoRouter);
 app.use(indexRouter);
-app.use(loginRouter);
 app.use(servicosRouter);
 app.use(sobreRouter);
 
