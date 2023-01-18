@@ -167,8 +167,8 @@ Nesta atividade iremos criar um crud de serviços
 Para atingir esse objetivo será necessário:
 
 -   [X] Criar a view de admin para visualizar todos os serviços cadastrados, o nome da view deve ser:
--   [ ] Criar a view para cadastro de serviços
--   [ ] Criar a view para edição de serviços
+-   [X] Criar a view para cadastro de serviços
+-   [X] Criar a view para edição de serviços
 -   [ ] Criar o arquivo `admin.js` na pasta de rotas e criar as seguintes rotas:
 
     -   | Route                        | Method | Param          | Description                                 |
