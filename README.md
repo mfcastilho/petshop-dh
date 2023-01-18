@@ -182,4 +182,4 @@ Para atingir esse objetivo será necessário:
         | `/admin/servicos/:id`        | GET    | `id: required` | Deve renderizar a view `servicos`           |
 
 -   [ ] **Obs**: Lembre-se que para trabalhar com requisições do tipo PATCH, PUT e DELETE, precisamos instalar a biblioteca `method override`
-# petshop-dh
+
