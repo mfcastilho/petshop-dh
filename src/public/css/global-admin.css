@@ -31,7 +31,7 @@ aside.left a.active {
 }
 
 .btn-primary:hover {
-    background-color: #ffbe51!important;
+    background-color: #e1ac50!important;
     border: none!important;
 }
 
@@ -48,7 +48,7 @@ aside.left a.active {
 }
 
 .form_product h1 {
-    color: #6C4AB6;
+    color: #ffbe51;
     font-weight: bold;
 }
 

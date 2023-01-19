@@ -19,7 +19,20 @@ const AdminController = {
     })
 
     res.render("admin/home-admin.ejs", {services:servicosMapeado});
+  },
+  showCadastroServicos:(req, res)=>{
+
+    res.render("admin/services/cadastro-servico.ejs");
+  },
+  showEditarServicos: (req, res)=>{
+
+    res.render("admin/services/editar-servico.ejs");
+  },
+  showLoginAdmin: (req, res)=>{
+
+    res.render("admin/auth/login-admin.ejs");
   }
+
 }
 
 
