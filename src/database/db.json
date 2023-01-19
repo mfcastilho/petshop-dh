@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Banho e tosa",
-      "price": 70.0,
+      "price": 70,
       "description": "O melhor serviço de banho e tosa da cidade!",
       "image": "https://www.revistapetcenter.com.br/wp-content/uploads/2022/07/petcenter-241-anuario-banho-e-tosa-renta%CC%81vel.jpg"
     },
@@ -34,6 +34,13 @@
       "price": 150.98,
       "description": "Realizamos atendimeto médico ao seu pet com os melhores veterinários da cidade.",
       "image": "https://fresh4pet.com.br/wp-content/uploads/2020/08/foto-blog-24-agosto-1024x756.jpg"
+    },
+    {
+      "id": "044bcb26-ddb3-4503-8a77-9b39731cd03b",
+      "name": "TaxiDog",
+      "price": "R$ 88",
+      "image": "https://bensvet.com.br/wp-content/uploads/2019/09/aprenda-como-implantar-t%C3%A1xi-dog-em-cl%C3%ADnica-veterin%C3%A1ria-ou-pet-shop-petshop.jpg",
+      "description": "O TaxiDog oferece um serviço personalizado de transporte de animais domésticos. Muito mais que um taxidog (ou taxicat) nós oferecemos uma espécie de serviço de “motorista particular” do seu bichinho. Não só transportamos o seu pet como ficamos a disposição até buscá-lo do compromisso e devolvermos à sua residência. Não pegamos corridas intermediárias, a não ser que seja previamente combinado."
     }
   ],
   "users": [

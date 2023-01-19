@@ -9,4 +9,6 @@ router.get("/admin/servicos/:id/editar", AdminController.showEditarServicos);
 router.get("/admin/login", AdminController.showLoginAdmin);
 
 
+router.post("/admin/servicos/cadastrar", AdminController.storeService);
+
 module.exports = router;

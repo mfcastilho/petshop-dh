@@ -1,4 +1,5 @@
 const ServicesModel = require("../models/ServicesModel");
+const makeId = require("uuid").v4;
 
 
 const AdminController = {
@@ -31,6 +32,22 @@ const AdminController = {
   showLoginAdmin: (req, res)=>{
 
     res.render("admin/auth/login-admin.ejs");
+  },
+  storeService: (req, res)=>{
+    const {servico, price, image, description} = req.body;
+
+    const newService = {
+      id:makeId(),
+      servico,
+      price: `R$ ${price}`,
+      image,
+      description
+    }
+
+    ServicesModel.create(newService);
+
+    res.redirect("/admin/home");
+
   }
 
 }
