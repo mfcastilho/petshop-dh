@@ -41,7 +41,7 @@ const AdminController = {
     const newService = {
       id:makeId(),
       name,
-      price: `R$ ${price}`,
+      price:parseFloat(price),
       image,
       description
     }
