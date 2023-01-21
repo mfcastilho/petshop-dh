@@ -1,11 +1,7 @@
+//=== IMPORTAÇÕES ===   
 const express = require("express");
-const app = express();
-
-const port = 3000;
 const path = require("path");
-
-
-
+const methodOverride = require("method-override");
 
 const authRouter = require("./routers/authRouter");
 const contatoRouter = require("./routers/contatoRouter");
@@ -15,12 +11,15 @@ const sobreRouter = require("./routers/sobreRouter");
 const adminRouter = require("./routers/adminRouter");
 
 
-
+//=== VAVRIÁVEIS ===
+const port = 3000;
+const app = express();
 
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve("src", "views"));
 
+app.use(methodOverride("_method"));
 
 app.use(express.json());
 app.use(express.static(path.resolve("src", "public")));

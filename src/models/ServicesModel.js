@@ -17,6 +17,16 @@ const ServicesModel = {
     const dbJSON = JSON.stringify(dataBase);
     fs.writeFileSync(pathDataBase, dbJSON);
 
+  },
+  update:(service)=>{
+
+  },
+  delete:(serviceIndex)=>{
+
+    dataBase.services.splice(serviceIndex,1);
+    const dbJSON = JSON.stringify(dataBase);
+    fs.writeFileSync(pathDataBase, dbJSON);
+    
   }
 }
 

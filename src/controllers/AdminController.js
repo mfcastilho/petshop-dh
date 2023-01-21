@@ -50,6 +50,23 @@ const AdminController = {
 
     res.redirect("/admin/home");
 
+  },
+  updateService:( req, res)=>{
+
+
+
+
+
+  },
+  deleteService: (req, res)=>{
+    const {id} = req.params;
+
+    const services = ServicesModel.findAll();
+    const serviceIndex = services.findIndex(service=>service.id == id);
+    ServicesModel.delete(serviceIndex);
+
+    return res.redirect("/admin/home");
+
   }
 
 }
