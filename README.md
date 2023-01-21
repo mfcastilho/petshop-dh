@@ -1,4 +1,4 @@
-# petshop-dh-fnts18
+# petshop-dh
 
 ## Atividades
 
@@ -169,7 +169,7 @@ Para atingir esse objetivo será necessário:
 -   [X] Criar a view de admin para visualizar todos os serviços cadastrados, o nome da view deve ser:
 -   [X] Criar a view para cadastro de serviços
 -   [X] Criar a view para edição de serviços
--   [ ] Criar o arquivo `admin.js` na pasta de rotas e criar as seguintes rotas:
+-   [X] Criar o arquivo `admin.js` na pasta de rotas e criar as seguintes rotas:
 
     -   | Route                        | Method | Param          | Description                                 |
         | :--------------------------- | :----- | :------------- | :------------------------------------------ |
