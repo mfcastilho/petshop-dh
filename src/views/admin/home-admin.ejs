@@ -45,6 +45,9 @@
 					<tbody>
 						
             <% services.forEach((service)=>{ %>
+
+
+							
               <tr>
                 <th scope="row"><%= service.id %></th>
                 <td><img class="thumb" src="<%= service.image %>" alt="" width="100px" height="100px"></td>
@@ -53,8 +56,8 @@
                 <!-- <td>Sim</td> -->
                 <td><%= service.description %></td>
                 <td>
-                  <a href="/servicos/id" type="button" class="btn btn-primary">Abrir</a>
-                  <a href="/admin/servicos/id/editar" type="button" class="btn btn-secondary">Editar</a>
+                  <a href="/servicos/<% service.id %>" type="button" class="btn btn-primary">Abrir</a>
+                  <a href="/admin/servicos/<%= service.id %>/editar" type="button" class="btn btn-secondary">Editar</a>
   
                   <form action="/admin/servicos/<%= service.id %>/deletar?_method=DELETE" method="POST">
                     <button type="submit" class="btn btn-danger">Excluir</button>

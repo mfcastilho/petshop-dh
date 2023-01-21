@@ -27,7 +27,18 @@ const AdminController = {
   },
   showEditarServicos: (req, res)=>{
 
-    res.render("admin/services/editar-servico.ejs");
+    const {id} = req.params;
+    
+
+    const servicos = ServicesModel.findAll();
+    
+    const serviceFound = servicos.find(servico=>servico.id == id);
+
+    if(serviceFound == undefined){
+      return res.send("Serviço não encontrado");
+    }
+    
+    return res.render("admin/services/editar-servico.ejs", {service:serviceFound});
   },
   showLoginAdmin: (req, res)=>{
 
@@ -53,9 +64,52 @@ const AdminController = {
   },
   updateService:( req, res)=>{
 
+    const {id} = req.params;
+
+    const services = ServicesModel.findAll();
+
+    const service = services.find(service=>service.id == id);
+    const serviceIndex = services.findIndex(service=>service.id == id);
+    let img;
+
+    console.log(service)
+
+    let {name, price, description, image} = req.body;
 
 
 
+    if(req.file.filename == undefined){
+      
+      img = image;
+    }else{
+      img = `/img/${req.file.filename}`;
+    }
+    
+
+    if(name == undefined){
+      name=service.name;
+      
+    }
+    if(price == undefined){
+      price=service.price;
+    }
+
+    if(description==undefined){
+      description=service.description;
+    }
+
+  
+    const serviceUpdate = {
+      id,
+      name,
+      price,
+      image:img,
+      description
+    }
+
+    ServicesModel.update(serviceUpdate, serviceIndex);
+
+    res.redirect("/admin/home", {service:serviceUpdate});
 
   },
   deleteService: (req, res)=>{

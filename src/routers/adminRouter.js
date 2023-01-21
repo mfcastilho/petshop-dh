@@ -27,6 +27,8 @@ router.get("/admin/login", AdminController.showLoginAdmin);
 
 router.post("/admin/servicos/cadastrar",uploadFile.single("image"), AdminController.storeService);
 
+router.put("/admin/servicos/:id/editar", AdminController.updateService);
+
 router.delete("/admin/servicos/:id/deletar", AdminController.deleteService);
 
 module.exports = router;
