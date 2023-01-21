@@ -102,8 +102,11 @@ section.servicos .container {
 section.servicos .items {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	flex-wrap: wrap;
+	
 }
+
 
 section.servicos .items article {
 	width: 230px;

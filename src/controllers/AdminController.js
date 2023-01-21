@@ -34,11 +34,13 @@ const AdminController = {
     res.render("admin/auth/login-admin.ejs");
   },
   storeService: (req, res)=>{
-    const {servico, price, image, description} = req.body;
+    const {name, price, description} = req.body;
+
+    const image = `/img/${req.file.filename}`;
 
     const newService = {
       id:makeId(),
-      servico,
+      name,
       price: `R$ ${price}`,
       image,
       description
