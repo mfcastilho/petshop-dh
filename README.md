@@ -181,5 +181,5 @@ Para atingir esse objetivo será necessário:
         | `/admin/servicos/:id/delete` | DELETE | `id: required` | Deve renderizar a view `contato`            |
         | `/admin/servicos/:id`        | GET    | `id: required` | Deve renderizar a view `servicos`           |
 
--   [ ] **Obs**: Lembre-se que para trabalhar com requisições do tipo PATCH, PUT e DELETE, precisamos instalar a biblioteca `method override`
+-   [X] **Obs**: Lembre-se que para trabalhar com requisições do tipo PATCH, PUT e DELETE, precisamos instalar a biblioteca `method override`
 
