@@ -48,11 +48,11 @@ const AdminController = {
     const {name, price, description} = req.body;
 
 
-    // if(!req.file){
-    //   const error = new Error("É necessário selecionar um arquivo!");
-    //   error.httpStatusCode = 400;
-    //   return next(error);
-    // }
+    if(!req.file){
+      const error = new Error("É necessário selecionar um arquivo!");
+      error.httpStatusCode = 400;
+      return next(error);
+    }
 
     const image = `/img/${req.file.filename}`;
 
