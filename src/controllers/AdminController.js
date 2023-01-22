@@ -19,11 +19,11 @@ const AdminController = {
       });
     })
 
-    res.render("admin/home-admin.ejs", {services:servicosMapeado});
+    return res.render("admin/home-admin.ejs", {services:servicosMapeado});
   },
   showCadastroServicos:(req, res)=>{
 
-    res.render("admin/services/cadastro-servico.ejs");
+    return res.render("admin/services/cadastro-servico.ejs");
   },
   showEditarServicos: (req, res)=>{
 
@@ -42,10 +42,17 @@ const AdminController = {
   },
   showLoginAdmin: (req, res)=>{
 
-    res.render("admin/auth/login-admin.ejs");
+    return res.render("admin/auth/login-admin.ejs");
   },
   storeService: (req, res)=>{
     const {name, price, description} = req.body;
+
+
+    // if(!req.file){
+    //   const error = new Error("É necessário selecionar um arquivo!");
+    //   error.httpStatusCode = 400;
+    //   return next(error);
+    // }
 
     const image = `/img/${req.file.filename}`;
 
@@ -59,7 +66,7 @@ const AdminController = {
 
     ServicesModel.create(newService);
 
-    res.redirect("/admin/home");
+    return res.redirect("/admin/home");
 
   },
   updateService:( req, res)=>{
@@ -74,42 +81,39 @@ const AdminController = {
 
     console.log(service)
 
-    let {name, price, description, image} = req.body;
+    let {name, price, description} = req.body;
 
+    console.log(service.image);
 
-
-    if(req.file.filename == undefined){
-      
-      img = image;
+    if(!req.file){
+      img = service.image;
     }else{
-      img = `/img/${req.file.filename}`;
-    }
-    
-
-    if(name == undefined){
-      name=service.name;
-      
-    }
-    if(price == undefined){
-      price=service.price;
+      img = `/img/${req.file.filename}`
     }
 
-    if(description==undefined){
-      description=service.description;
+    if(!name){
+      name = service.name;
     }
 
-  
+    if(!price){
+      price = service.price;
+    }
+
+    if(!description){
+      description = service.description;
+    }
+
     const serviceUpdate = {
       id,
       name,
       price,
-      image:img,
-      description
+      description,
+      image:img
     }
 
     ServicesModel.update(serviceUpdate, serviceIndex);
 
-    res.redirect("/admin/home", {service:serviceUpdate});
+    return res.redirect("/admin/home");
 
   },
   deleteService: (req, res)=>{
