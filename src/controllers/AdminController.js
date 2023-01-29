@@ -1,5 +1,6 @@
 const ServicesModel = require("../models/ServicesModel");
 const makeId = require("uuid").v4;
+const { validationResult } = require("express-validator"); 
 
 
 const AdminController = {
@@ -46,7 +47,12 @@ const AdminController = {
   },
   storeService: (req, res)=>{
     const {name, price, description} = req.body;
+    const errors = validationResult(req);
 
+    //validação
+    if(!errors.isEmpty()){
+      return res.render("admin/services/cadastro-servico.ejs", {errors: errors.mapped(), old: req.body});
+    }
 
     if(!req.file){
       const error = new Error("É necessário selecionar um arquivo!");

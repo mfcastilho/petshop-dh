@@ -1,1 +1,78 @@
-{"services":[{"id":"1","name":"Banho e tosa","price":70,"description":"O melhor serviço de banho e tosa da cidade!","image":"https://www.revistapetcenter.com.br/wp-content/uploads/2022/07/petcenter-241-anuario-banho-e-tosa-renta%CC%81vel.jpg"},{"id":2,"name":"Vacinação","price":120,"description":"Cuide da saúde do seu pet, coloque a carteira de vacinação do seu pet em dia!","image":"https://www.granvitapet.com.br/sitedata//imgsdt/geral/vacinacao-do-seu-pet.jpg"},{"id":3,"name":"Passeio","price":50.97,"description":"Passeamos com o seu pet. Duração do passeio: 15min","image":"https://cisavet.com.br/arquivos/banco-de-imagens/categoria-1/dicas-para-a-hora-do-passeio-com-o-pet-20180820132255.jpg"},{"id":4,"name":"Cuidar do pet - Diária","price":80.55,"description":"Cuidamos do seu pet no período da 08:00 - 18:00. Neste valor está incluso um passeio com o pet e a alimentação.","image":"https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/fb066060-85f9-4b46-806e-33083fbbf82b/carinho-cachorro.jpg"},{"id":5,"name":"Consulta veterinária","price":150.98,"description":"Realizamos atendimeto médico ao seu pet com os melhores veterinários da cidade.","image":"https://fresh4pet.com.br/wp-content/uploads/2020/08/foto-blog-24-agosto-1024x756.jpg"},{"id":"bf5b3485-8271-4fa7-807d-590ec3c36b57","name":"Pet Delivery","price":"23","description":"Com apenas alguns toques, você encontrará os melhores produtos para o seu pet","image":"/img/1674360915732_img_pt-delivery.jpeg"},{"id":"a44f8ff3-5438-4713-b255-8513e4d09a42","name":"TaxiDog","price":84,"description":"O TaxiDog oferece um serviço personalizado de transporte de animais domésticos. Muito mais que um taxidog (ou taxicat) nós oferecemos uma espécie de serviço de “motorista particular” do seu bichinho. Não só transportamos o seu pet como ficamos a disposição até buscá-lo do compromisso e devolvermos à sua residência. Não pegamos corridas intermediárias, a não ser que seja previamente combinado.","image":"/img/1674322703543_img_taxidog.jpeg"},{"id":"a18d0f1c-a30c-4353-8a5e-e0d6e4283a50","name":"Spa Animal","price":337,"description":"Se o seu bichinho estiver fora de forma, preguiçoso, precisando de adestramento ou até mesmo você achar que ele mereça um “dia de rei ou rainha”, oferecemos serviços para todos os gostos e necessidades no SPA animal. Desde os processos mais simples, como banho e tosa, aos mais elaborados, o SPA Animal não deixa nada a desejar a muitos centros especializados neste ramo para os humanos. O banho de ofurô é um exemplo, em que por 10 minutos (tempo máximo permitido) eles desfrutam dos benefícios desta técnica milenar japonesa. Imersos em um tipo de banheira arredondada de madeira e sem pregos, a água morna ameniza dores musculares, problemas ósseos, aumenta a circulação sanguínea, acelera o metabolismo e, consequentemente, a liberação das toxinas, deixando-os calmos e relaxados. A música ambiente e pétalas de rosa complementam este momento de glamour. Vale ressaltar que tudo é supervisionado por um profissional da área, os ouvidos são protegidos para não entrar água e causar problemas como otite, os produtos utilizados devem ser neutros (não causando alergias na pele dos animais), eles precisam ficar bem secos ao final do procedimento e nunca fazê-lo mais de uma vez por semana.","image":"/img/1674343830703_img_cachorro-spa.jpg"}],"users":[{"id":1,"firstName":"John","lastName":"Doe","email":"john@mail.com","password":"123456","isAdmin":true},{"id":2,"firstName":"Lorem","lastName":"Ipsum","email":"lorem@mail.com","password":"123456","isAdmin":false}]}
+{
+  "services": [
+    {
+      "id": "1",
+      "name": "Banho e tosa",
+      "price": 70,
+      "description": "O melhor serviço de banho e tosa da cidade!",
+      "image": "https://www.revistapetcenter.com.br/wp-content/uploads/2022/07/petcenter-241-anuario-banho-e-tosa-renta%CC%81vel.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Vacinação",
+      "price": 120,
+      "description": "Cuide da saúde do seu pet, coloque a carteira de vacinação do seu pet em dia!",
+      "image": "https://www.granvitapet.com.br/sitedata//imgsdt/geral/vacinacao-do-seu-pet.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Passeio",
+      "price": 50.97,
+      "description": "Passeamos com o seu pet. Duração do passeio: 15min",
+      "image": "https://cisavet.com.br/arquivos/banco-de-imagens/categoria-1/dicas-para-a-hora-do-passeio-com-o-pet-20180820132255.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Cuidar do pet - Diária",
+      "price": 80.55,
+      "description": "Cuidamos do seu pet no período da 08:00 - 18:00. Neste valor está incluso um passeio com o pet e a alimentação.",
+      "image": "https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/fb066060-85f9-4b46-806e-33083fbbf82b/carinho-cachorro.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Consulta veterinária",
+      "price": 150.98,
+      "description": "Realizamos atendimeto médico ao seu pet com os melhores veterinários da cidade.",
+      "image": "https://fresh4pet.com.br/wp-content/uploads/2020/08/foto-blog-24-agosto-1024x756.jpg"
+    },
+    {
+      "id": "bf5b3485-8271-4fa7-807d-590ec3c36b57",
+      "name": "Pet Delivery",
+      "price": "23",
+      "description": "Com apenas alguns toques, você encontrará os melhores produtos para o seu pet",
+      "image": "/img/1674360915732_img_pt-delivery.jpeg"
+    },
+    {
+      "id": "a44f8ff3-5438-4713-b255-8513e4d09a42",
+      "name": "TaxiDog",
+      "price": 84,
+      "description": "O TaxiDog oferece um serviço personalizado de transporte de animais domésticos. Muito mais que um taxidog (ou taxicat) nós oferecemos uma espécie de serviço de “motorista particular” do seu bichinho. Não só transportamos o seu pet como ficamos a disposição até buscá-lo do compromisso e devolvermos à sua residência. Não pegamos corridas intermediárias, a não ser que seja previamente combinado.",
+      "image": "/img/1674322703543_img_taxidog.jpeg"
+    },
+    {
+      "id": "a18d0f1c-a30c-4353-8a5e-e0d6e4283a50",
+      "name": "Spa Animal",
+      "price": 337,
+      "description": "Se o seu bichinho estiver fora de forma, preguiçoso, precisando de adestramento ou até mesmo você achar que ele mereça um “dia de rei ou rainha”, oferecemos serviços para todos os gostos e necessidades no SPA animal. Desde os processos mais simples, como banho e tosa, aos mais elaborados, o SPA Animal não deixa nada a desejar a muitos centros especializados neste ramo para os humanos. O banho de ofurô é um exemplo, em que por 10 minutos (tempo máximo permitido) eles desfrutam dos benefícios desta técnica milenar japonesa. Imersos em um tipo de banheira arredondada de madeira e sem pregos, a água morna ameniza dores musculares, problemas ósseos, aumenta a circulação sanguínea, acelera o metabolismo e, consequentemente, a liberação das toxinas, deixando-os calmos e relaxados. A música ambiente e pétalas de rosa complementam este momento de glamour. Vale ressaltar que tudo é supervisionado por um profissional da área, os ouvidos são protegidos para não entrar água e causar problemas como otite, os produtos utilizados devem ser neutros (não causando alergias na pele dos animais), eles precisam ficar bem secos ao final do procedimento e nunca fazê-lo mais de uma vez por semana.",
+      "image": "/img/1674343830703_img_cachorro-spa.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@mail.com",
+      "password": "123456",
+      "isAdmin": true
+    },
+    {
+      "id": 2,
+      "firstName": "Lorem",
+      "lastName": "Ipsum",
+      "email": "lorem@mail.com",
+      "password": "123456",
+      "isAdmin": false
+    }
+  ]
+}

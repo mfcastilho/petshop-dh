@@ -11,8 +11,8 @@ const sobreRouter = require("./routers/sobreRouter");
 const adminRouter = require("./routers/adminRouter");
 
 
-//=== VAVRIÁVEIS ===
-const port = 3000;
+//=== VARIÁVEIS ===
+const port = 5000;
 const app = express();
 
 
@@ -26,7 +26,7 @@ app.use(express.static(path.resolve("src", "public")));
 app.use(express.urlencoded({extended:true}));
 
 
-
+//===ROTAS===
 app.use(authRouter);
 app.use(contatoRouter);
 app.use(indexRouter);
